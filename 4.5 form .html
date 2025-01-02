@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+<body>
+    <h1>This is Forms</h1>
+    <big><big><caption>Enter all the details of the students</caption></big></big> <br><br>
+    <form action="rock.php">
+        <!-- the "form" will submit all the data below at "rock.php" -->
+        Name : <input type="text">
+        Role : <input type="text">
+        <br><br><br>
+        <!-- here it will print the above in the same line, so we have to avoid it by using "Div" tag -->
+<hr>
+<br><br>
+
+        <label for="name"> Name </label>
+        <div>
+            <input type="text" name="myName" id="name" autofocus> enter your name
+            <!-- the text inside the "id" section should be same as you have written inside the label (inside the "for" tag ie "name") -->
+             <!-- "autofocus" = thhis means whenever you run the site your curser will be automatrically on the name box  / form -->
+            <!-- whenever we will be clicking on the "Name" text on the site will automatically select the box to type inside 
+             We use this function by using "label". As you can see above, we have labelized the Name section.-->
+        </div>
+            <br>
+            <div>
+                Name <input type="text" name="myName"> enter you name
+                <!-- here we added "name" bcoz backend will know what does this input mean.
+                As we put name = myName, so here backend knows this belongs to entering anmes only -->
+            </div>
+            <br>
+        <div>
+            Role : <input type="text" name="myRole"> enter your roll no
+        </div>
+            <br>
+        <div>
+            Email : <input type="email" name="myEmail" id=""> enter your e-mail
+            <!-- type "input:email" and press enter, it will automatically print the above syntax -->
+        </div>
+            <br>
+        <div>
+            Date : <input type="date" name="myDate" id=""> enter your DOB
+            <!-- "input:date" and press enter -->
+        </div>
+            <br>
+        <div>
+            Bonus : <input type="number" name="myBonus"> enter your bonus (up and down arrow will be shown here)
+            <!-- It meaans  -->
+        </div>
+            <br>
+            <div> 
+                Bonus : <input type="Bonus" name="myBonus">
+                <!-- now you may learn what is the difference btwn "type=number" & "type=bonus" -->
+            </div>
+            <br>
+        <div>
+            Are you eleigible ??? <input type="checkbox" name="myEligibility" id="">
+        </div>
+            <br>
+            
+            <div>
+                Are you eleigible ??? <input type="checkbox" name="myEligibility" id="" checked>
+                <!-- "checked" means when we run the code, "are you eligible" section will be previously checked as yes -->
+            </div>
+            <br>
+
+        <div>
+            Gender : 
+            Male <input type="radio" name="myGender" id=""> 
+            Female <input type="radio" name="myGender" id=""> 
+            Other <input type="radio" name="myGender" id="">
+                <!-- here we have put "name=myGender" it means it will resualt in, when we check wheather it is a male or female or other 
+                 we will oinly be able to click one option, you cant select multi opotion here -->
+        </div>
+            
+        <br>
+            <div>
+                Gender : 
+                Male <input type="radio" name="myGender1" id=""> 
+                Female <input type="radio" name="myGender2" id=""> 
+                Other <input type="radio" name="myGender3" id="">
+                    <!-- here we have given different names, it means we will be able to click all the options-->
+            </div>
+            <br>
+            <!-- now we will do the same with "label" tag -->
+        
+                    <div>
+                        <label for="gender">
+                            Gender :
+                            male <input type="radio" name="gender" id="">
+                            female <input type="radio" name="gender" id="">
+                            other <input type="radio" name="gender" id="">
+                        </label>
+                    </div>
+            
+        <div>
+            Write student's remark : <br>
+            <textarea name="myText" id="" cols="30" rows="10"></textarea>
+                <!-- "textarea:cols:rows" and press eneter -->
+        </div>
+            <br>
+        <div>
+            <label for="car">Choose your car</label>
+            <!-- here you have created a form / box -->
+                <select 
+                    name="myCar" id="car">
+                    
+                    <option value="Faraari">Faraari</option>
+                    <option value="Lamborgini">Lamborgini</option>
+                    <option value="Rolls Royce" selected>Rolls Royce</option>
+                        <!-- when you write "selected" inside, the car option for "Rolls Royce" will be automatically selected in the site -->
+                    <option value="Audi">Audi</option>
+                    <option value="Indica">Indica</option>
+                    <option value="Swift">Swift</option>
+                    <option value="Toyota">Toyota</option>
+                        <!-- here you have different options of cars inside the "select" tag -->
+                </select>    
+                <!-- options should be inside of the "select" tag, 
+                 if not it will be shown outside of the car form /box you have created -->
+        </div>
+            <br>
+        
+        <div>
+            select the gender : 
+            <label for="male">male</label>
+                <input type="radio" name="gender" id="male"> 
+            <label for="female">female</label>
+                <input type="radio" name="gender" id="female">
+        </div>
+        <br><br>
+        
+        
+            <div>
+                <input type="submit" value="Submit Now"> click here submit
+                    <!-- "input:submit" and press enter -->
+                <input type="reset" value="Reset Now"> click here to reset 
+                    <!-- "input:reset" and press enter -->
+                     <!-- it will reset all the vcalues entered above -->
+            </div>
+
+    </form>
+
+</body>
+</html>
